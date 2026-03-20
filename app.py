@@ -191,4 +191,7 @@ def update_dashboard(loc):
         {'color': 'green' if variation_qty_filtre > 0 else 'red', 'fontSize': '16px', 'margin': '0'}
     )
 app.layout = layout
-app.run(debug=True)
+server = app.server
+
+if __name__ == '__main__':
+    app.run(debug=False)  
